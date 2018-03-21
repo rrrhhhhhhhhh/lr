@@ -5,16 +5,16 @@
 /* typefaces */
 @font-face {
     font-family: 'latin-modern-roman';
-    src: url('lmr-regular.woff2') format('woff2'),
-         url('lmr-regular.woff') format('woff');
+    src: url('../fonts/lmr-regular.woff2') format('woff2'),
+         url('../fonts/lmr-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'latin-modern-roman';
-    src: url('lmr-italic.woff2') format('woff2'),
-         url('lmr-italic.woff') format('woff');
+    src: url('../fonts/lmr-italic.woff2') format('woff2'),
+         url('../fonts/lmr-italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
@@ -34,7 +34,9 @@ transition: color 2s; /* For modern browsers */
        color: #080808;
    }
 
-header { font-family: 'latin-modern-roman' }
+header {
+  font-family: 'latin-modern-roman';
+}
 
 header > a:link,
 header > a:visited,
@@ -76,7 +78,7 @@ a:active {
 
 body {
   margin: 30px;
-  font-family: latin-modern-roman;
+  font-family: 'latin-modern-roman';
   font-size: 22px;
 }
 
