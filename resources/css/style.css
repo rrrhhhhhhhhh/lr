@@ -5,8 +5,8 @@
 /* typefaces */
 @font-face {
     font-family: 'latin-modern-roman';
-    src: url('../fonts/lmr-regular.woff2') format('woff2'),
-         url('../fonts/lmr-regular.woff') format('woff');
+    src: url('./fonts/lmr-regular.woff2') format('woff2'),
+         url('./fonts/lmr-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
