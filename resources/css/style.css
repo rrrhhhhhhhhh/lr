@@ -25,8 +25,14 @@
   --------------------------------------------------------
 */
 a {
-  color: black;
+  color: #FEFEFE;
+-webkit-transition: color 2s; /* For Safari 3.0 to 6.0 */
+transition: color 2s; /* For modern browsers */
 }
+
+   a:hover {
+       color: #080808;
+   }
 
 header > a:link,
 header > a:visited,
@@ -40,7 +46,7 @@ li > a:visited {
 header > a:hover,
 .menu-item > a:hover ,
 li > a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:link,
