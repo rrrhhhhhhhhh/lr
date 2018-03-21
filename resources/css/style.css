@@ -1,0 +1,293 @@
+/*
+ * main.css -- lumberroom.com
+ */
+
+/* typefaces */
+@font-face {
+    font-family: 'latin-modern-roman';
+    src: url('../fonts/lmr-regular.woff2') format('woff2'),
+         url('../fonts/lmr-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latin-modern-roman';
+    src: url('../fonts/lmr-italic.woff2') format('woff2'),
+         url('../fonts/lmr-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*
+  --------------------------------------------------------
+   links
+  --------------------------------------------------------
+*/
+a {
+  color: black;
+}
+
+header > a:link,
+header > a:visited,
+.menu-item > a:link,
+.menu-item > a:visited,
+li > a:link,
+li > a:visited {
+  text-decoration: none;
+}
+
+header > a:hover,
+.menu-item > a:hover ,
+li > a:hover {
+  text-decoration: underline;
+}
+
+a:link,
+a:visited,
+.select > a:link,
+.select > a:visited,
+li.exhibition > a:link,
+li.exhibition > a:visited  {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* end links */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+  font-family: latin-modern-roman;
+  font-size: 22px;
+}
+
+header {
+  border-top: 10px solid #EA983f;
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #000;
+}
+
+hr.hrbr {
+  background: #fff;
+}
+
+section.main {
+  /* max-width: 700px; */
+}
+
+section.body {
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: helvetica;
+  font-size: 22px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin-left: 0px;
+}
+
+figure.thumb {
+  cursor: pointer;
+  width: 350px;
+  margin-bottom: 2em;
+}
+
+figure.gallery {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin: 0;
+  z-index: -1;
+}
+
+figcaption,
+.courier {
+  font-family: "Courier New";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+figcaption.gallery {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#menu {
+  margin-top: 80px;
+  margin-bottom: 44px;
+}
+
+/* gallery stuff */
+
+#hp-thumbnails {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  z-index: -1;
+  padding: 30px;
+}
+
+#hp-thumbnails > figure.thumb {
+}
+
+#gallery {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+}
+
+#gallery-div {
+  height: 80vh;
+  width: 80vw;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#gallery-ex,
+#gallery-prev,
+#gallery-next {
+	position: fixed;
+	width: 30px;
+  cursor: pointer;
+}
+
+#gallery-prev,
+#gallery-next {
+	top: 50%;
+	transform: translateY(-50%);
+}
+#gallery-ex {
+	top: 0px;
+	right: 0px;
+}
+
+#gallery-prev {
+	left: 0px;
+}
+
+#gallery-next {
+	right: 0px;
+}
+
+.ex-year {
+  padding-top: 20px;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-y {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: inherit;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+p.indent {
+  margin-top: 0;
+  text-indent: 50px;
+}
+
+p:first-of-type {
+  margin-top: 0;
+}
+
+div.book {
+   padding-top: 20px;
+}
+
+.book-thumb,
+.book-desc {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.book-thumb {
+  width: 200px;
+}
+
+.book-desc {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.book-desc > :first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 400pt) {
+  figure.thumb {
+    width: 100%;
+  }
+
+  figcaption {
+    display: none;
+  }
+
+  figcaption.gallery {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}
